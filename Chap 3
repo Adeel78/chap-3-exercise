@@ -1,0 +1,152 @@
+#Problem #17:-
+print(eval('2*3+1'))
+print(eval('"hello"'))
+print(eval("'hello'+' '+'world'"))
+
+print(eval("'ASCII'.count('I')"))
+print(eval('x=5'))
+#Problem #18:-
+a,b,c=3,4,5
+if a<b:
+    print('OK_1')
+#2   
+if c<b:
+    print('OK_2')
+#3   
+if a+b==c:
+    print('OK_3')
+#4
+if a**2+b**2==c**2:
+    print('OK_4')
+    
+    
+    
+#Problem #19:-
+a,b,c=3,4,5
+if a<b:
+    print('OK_1')
+else:
+    print ('Not Ok')
+#2   
+if c<b:
+    print('OK_2')
+else:
+    print ('Not Ok')
+#3   
+if a+b==c:
+    print('OK_3')
+else:
+    print ('Not Ok')
+#4
+if a**2+b**2==c**2:
+    print('OK_4')    
+else:
+    print ('Not Ok')
+#Problem #20:-    
+
+lst=["January","February","March"]
+for word in lst: 
+    print(word[:3])
+#Problem #21:-    
+lst=[2,3,4,5,6,7,8,9]
+for s in lst:
+    if s%2==0:
+        print(s)
+        
+#Problem #22:-        
+lst=[2,3,4,5,6,7,8,9]
+for s in lst:
+    if (s**2)%8==0:
+        print(s)
+        
+#Problem #23:-        
+for i in range(2):
+    print(i)
+for i in range(1):
+    print(i)
+for i in range(3,7):
+    print(i)
+for i in range(1,2):
+    print(i)
+for i in range(0,5,3):
+    print(i) 
+for i in range(5,24,4):
+    print(i)   
+    
+ #Problem #24:-   
+lst=['cia','secret','mi6','isi','secret']
+a='secret'
+for s in lst:
+    if s != a:
+        print(s)
+#Problem #25:-
+lst=['Ellie', 'Steve', 'Sam', 'Owen', 'Gavin']
+for s in lst:
+    if s[0] in ('ABCDEFGHIJKLM'):
+        print(s)
+#Problem #26:-
+lst=[1,4,5,6,7]
+print('The 1st element is ',lst[0])
+print('The last element is ',lst[-1])
+
+#Problem#28
+
+number = 49
+for i in range(1,number+1):     
+    if(number%i==0): 
+        print(i)
+
+#Problem #30:-    
+
+n_1=5
+n_2=7
+n_3=3
+n_4=5
+X=(n_1+n_2+n_3)//3
+if X == n_4:
+    print("Equal")
+    
+#Problem #31:-    
+x=2.5
+y=4
+a=0
+b=0
+r=8
+if (x-a)**2 + (y-b) < r**2:
+    print('It is in')
+#Problem #32:-    
+n='1234'
+print('',n[0],'\n',n[1],'\n',n[2],'\n',n[3])
+#Problem #33:-
+def xy(s):
+        return(s[::-1])
+print(xy('abcdef'))
+#Problem #34:-
+
+def pay(wage,hours):
+     payment = 0 
+     if(hours > 40):
+         paym = payment + (hours-40)*wage*1.5 
+         payment = paym + (40)*wage 
+     else: 
+         payment = payment + hours*wage 
+     return payment
+print(pay(10,35))
+print(pay(10,45))
+ 
+#Pronlrm 35:- 
+def prob(n):
+    return 2**(-n) 
+print(prob(1)) 
+print(prob(2))
+
+#Problem 36    
+def reverse_int(n):
+    x=0
+    while(n!=0): 
+        x*=10 
+        x+=n%10
+        n=n//10
+    return x 
+print(reverse_int(123))    
+print(reverse_int(567))
